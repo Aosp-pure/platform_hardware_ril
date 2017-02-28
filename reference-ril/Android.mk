@@ -20,7 +20,7 @@ LOCAL_STATIC_LIBRARIES := libqemu_pipe libbase
 LOCAL_CFLAGS := -D_GNU_SOURCE
 LOCAL_CFLAGS += -Wall -Wextra -Wno-unused-variable -Wno-unused-function -Werror
 
-LOCAL_C_INCLUDES :=
+LOCAL_C_INCLUDES := system/core/qemu_pipe/include
 
 ifeq ($(TARGET_DEVICE),sooner)
   LOCAL_CFLAGS += -DUSE_TI_COMMANDS
